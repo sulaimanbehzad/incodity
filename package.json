@@ -12,8 +12,8 @@
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.0",
     "nuxt": "^3.6.5",
-    "vite-plugin-vuetify": "^1.0.2",
-    "vuetify": "^3.3.21"
+    "vite-plugin-vuetify": "^2.0.2",
+    "vuetify": "^3.10.8"
   },
   "dependencies": {
     "@lbgm/phone-number-input": "^1.1.6-alpha.1",
@@ -26,9 +26,6 @@
     "pinia": "^2.1.6",
     "sass": "^1.69.3",
     "vue-select": "^4.0.0-beta.6"
-  },
-  "overrides": {
-    "vue": "latest"
   }
 }
 
