@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@types/node": "^18.17.0",
+    "@types/node": "^20.19.0",
     "nuxt": "^3.6.5",
     "vite-plugin-vuetify": "^2.0.2",
     "vuetify": "^3.10.8"
