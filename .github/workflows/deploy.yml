@@ -1,9 +1,9 @@
-name: Deploy Nuxt Landing Page to S3
+name: Deploy Nuxt 3 to S3
 
 on:
   push:
     branches:
-      - main
+      - main # Trigger on main branch push
 
 jobs:
   deploy:
@@ -19,13 +19,13 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Generate static site
+      - name: Build Nuxt site
         run: npm run generate
 
-      - name: Deploy to S3
-        uses: jakejarvis/s3-sync-action@v1
+      - name: Sync to S3
+        uses: jakejarvis/s3-sync-action@v0.5.1
         with:
           args: --acl public-read --delete
         env:
@@ -33,3 +33,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
+          SOURCE_DIR: ./dist
