@@ -1,10 +1,11 @@
 import { configure, defineRule } from "vee-validate";
-import * as AllRules from "@vee-validate/rules";
+import { required, email, min, max } from "@vee-validate/rules";
 
 export default defineNuxtPlugin((nuxtApp) => {
-  Object.keys(AllRules).forEach((rule) => {
-    defineRule(rule, AllRules[rule]);
-  });
+  defineRule("required", required);
+  defineRule("email", email);
+  defineRule("min", min);
+  defineRule("max", max);
 
   configure({
     validateOnBlur: false,
