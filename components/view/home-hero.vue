@@ -2,9 +2,9 @@
   <div class="hero">
     <div class="hero__main">
       <div class="hero__content">
-        <h1 class="hero__heading typed-out"> Empowering Innovation with</h1>
+        <h1 class="hero__heading typed-out"> Code Without Limits</h1>
         <div class="hero__heading-animated">
-          <h1 class="hero__heading typed-out"> Software Solutions </h1>
+          <h1 class="hero__heading typed-out"> For Your Business Growth </h1>
           <div class="line">
             <div></div>
             <line-path class="line-path" />
@@ -12,9 +12,10 @@
         </div>
 
         <p class="hero__desc">
-          We empower businesses to innovate through custom application
-          development, quality testing, automation, UI/UX design, AI-Powered
-          solutions and cloud solutions.
+          We empower small businesses to grow through custom software
+          solutions—AI-integrated applications and websites—combined with
+          strategic branding and SEO optimization that enhances online
+          visibility and generates leads.
         </p>
       </div>
       <v-btn color="primary" size="large" rounded>Take the Next Step</v-btn>
@@ -222,3 +223,4 @@
     color: #e3b505;
   }
 </style>
+
