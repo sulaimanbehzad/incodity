@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @mixin light-elevation($level, $base: #000) {
   $base1: rgba($base, 0.2);
   $base2: rgba($base, 0.14);
@@ -20,7 +22,7 @@
     4: $box-shadow4,
   );
 
-  box-shadow: map-get($light, $level);
+  box-shadow: map.get($light, $level);
 }
 
 @mixin dark-elevation($level, $base: #fff) {
@@ -40,8 +42,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: map-get($dark, $level);
+    background-color: map.get($dark, $level);
     pointer-events: none;
   }
 }
-

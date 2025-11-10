@@ -1,10 +1,12 @@
+@use "sass:map";
+
 $font-url: "@/assets/fonts";
 $font-families: (
   primary: Inter,
 );
 
 $font-faces: (
-  map-get($font-families, "primary"): (
+  map.get($font-families, "primary"): (
     regular: (
       font-style: normal,
       font-weight: 400,
@@ -27,4 +29,3 @@ $font-faces: (
     ),
   ),
 );
-

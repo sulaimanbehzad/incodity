@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 @use "../tools" as *;
+@use "sass:map";
 
 #app {
   @include typography(regular-14);
@@ -15,7 +16,7 @@
 body {
   height: 100%;
   margin: 0;
-  font-family: map-get($font-families, "primary");
+  font-family: map.get($font-families, "primary");
 
   ::-moz-selection {
     color: var(--color-text-on-primary);
@@ -78,4 +79,3 @@ select {
   color: var(--black-black-100, #c3c5c9);
   @include typography(regular-12);
 }
-
