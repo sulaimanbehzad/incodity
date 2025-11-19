@@ -5,9 +5,8 @@
         <img class="footer__logo" src="@/assets/img/logo-light.png" />
         <p class="footer__company">© Incodity 2023 </p>
         <p class="social__desc"
-          >You can find us at 5350 SHAWNEE RD STE 250, ALEXANDRIA, VA 22312.
-          Whether you're in the neighborhood or want to arrange a meeting, we'd
-          love to see you.</p
+          >You can find us at Virginia, USA. Whether you're in the neighborhood
+          or want to arrange a meeting, we'd love to see you.</p
         >
       </div>
       <div class="footer__section">
