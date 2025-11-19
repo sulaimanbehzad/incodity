@@ -74,6 +74,7 @@
     &__heading {
       @include typography(bold-48);
       text-align: center;
+      font-size: 3rem !important;
       margin-bottom: 2rem;
       color: var(--color-text-main);
       // @include flex($justify: center);
