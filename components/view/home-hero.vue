@@ -2,9 +2,9 @@
   <div class="hero">
     <div class="hero__main">
       <div class="hero__content">
-        <h1 class="hero__heading typed-out"> Code Without Limits</h1>
+        <h1 class="hero__heading typed-out">Code Without Limits</h1>
         <div class="hero__heading-animated">
-          <h1 class="hero__heading typed-out"> For Your Business Growth </h1>
+          <h1 class="hero__heading typed-out">For Your Business Growth</h1>
           <div class="line">
             <div></div>
             <line-path class="line-path" />
@@ -12,19 +12,16 @@
         </div>
 
         <p class="hero__desc">
-          We empower small businesses to grow through custom software
-          solutions—AI-integrated applications and websites—combined with
-          strategic branding and SEO optimization that enhances online
-          visibility and generates leads.
+          We help small businesses grow with custom software, AI-integrated
+          applications, and websites, combined with branding and SEO strategies
+          that boost visibility and generate leads.
         </p>
       </div>
       <v-btn color="primary" size="large" rounded>Take the Next Step</v-btn>
     </div>
 
     <heroPathIllustration />
-
     <hero2Illustration data-aos="fade-right" class="illustration-left" />
-
     <hero3Illustration data-aos="fade-left" class="illustration-right" />
   </div>
 </template>
@@ -35,6 +32,7 @@
   import hero2Illustration from "@/assets/illustration/hero-2.illustration.vue";
   import hero3Illustration from "@/assets/illustration/hero-3.illustration.vue";
   import linePath from "@/assets/svg/line-path.vue";
+
   export default {
     components: {
       HomeHeroIllustration,
@@ -48,7 +46,6 @@
 
 <style lang="scss" scoped>
   .hero {
-    // margin-top: 6.6rem;
     padding: space(20) space(25);
     height: 100vh;
 
@@ -67,7 +64,6 @@
     &__content {
       margin-bottom: 3rem;
       max-width: 70rem;
-
       @include flex($dir: column, $align: center, $justify: center);
     }
 
@@ -77,24 +73,18 @@
       font-size: 3rem !important;
       margin-bottom: 2rem;
       color: var(--color-text-main);
-      // @include flex($justify: center);
       z-index: 5;
+
       @include mq(large) {
         @include typography(bold-36);
       }
-      // @include mq(small) {
-      //   @include typography(bold-24);
-      // }
     }
 
     &__heading-animated {
-      // width: 50rem;
       position: relative;
       margin-bottom: 2rem;
       z-index: 5;
-      // @include mq(small) {
-      //   width: 23rem;
-      // }
+
       .typed-out {
         overflow: hidden;
         border-right: 0.3rem solid var(--color-text-main);
@@ -103,17 +93,15 @@
         animation: typing 1.5s steps(50, end) forwards, border-blink 1s infinite;
         height: 6rem;
         margin-bottom: 0;
+
         @include mq(large) {
           height: 4rem;
         }
-        // @include mq(small) {
-        //   height: 3rem;
-        // }
       }
+
       .line {
         position: relative;
-        // width: 55%;
-        // width: 30rem;
+
         > div {
           position: absolute;
           background: white;
@@ -123,10 +111,12 @@
           animation: lineDraw 0.4s 2s forwards;
         }
       }
+
       .line-path {
         width: 100%;
         color: #3c493f;
       }
+
       @keyframes lineDraw {
         from {
           width: 100%;
@@ -135,6 +125,7 @@
           width: 0%;
         }
       }
+
       @keyframes typing {
         from {
           width: 0;
@@ -143,15 +134,14 @@
           width: 100%;
         }
       }
+
       @keyframes border-blink {
-        0% {
+        0%,
+        100% {
           border-color: var(--color-text-main);
         }
         50% {
           border-color: transparent;
-        }
-        100% {
-          border-color: var(--color-text-main);
         }
       }
     }
@@ -161,6 +151,7 @@
       text-align: center;
       margin-top: 2rem;
       max-width: 60rem;
+
       @include mq(large) {
         @include typography(semi-bold-16);
       }
@@ -177,9 +168,6 @@
     &__btn {
       margin-bottom: 2rem;
     }
-
-    @include mq(medium) {
-    }
   }
 
   .illustration-left {
@@ -187,13 +175,13 @@
     width: 40rem;
     left: 0;
     bottom: 10%;
+
     @include mq(x-large) {
       width: 30rem;
     }
     @include mq(large) {
       width: 20rem;
     }
-
     @include mq(medium) {
       display: none;
     }
@@ -203,13 +191,12 @@
     position: absolute;
     width: 35rem;
     height: 35rem;
-    // right: -3rem;
     right: 0;
     bottom: 0;
+
     @include mq(large) {
       width: 20rem;
     }
-
     @include mq(medium) {
       display: none;
     }
