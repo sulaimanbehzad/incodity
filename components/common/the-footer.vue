@@ -24,7 +24,7 @@
           <h4 class="footer__title">Email</h4>
           <p
             >We're just an email away. Send your inquiries, feedback, or project
-            details to info@devfusionlab.com and we'll respond promptly.</p
+            details to info@incodity.com and we'll respond promptly.</p
           >
         </div>
         <div class="footer__desc">
