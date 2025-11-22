@@ -74,7 +74,7 @@
   const error = ref(false);
 
   const API_URL =
-    "https://dkv0yevbki.execute-api.us-east-1.amazonaws.com/contact";
+    "https://dkv0yevbki.execute-api.us-east-1.amazonaws.com/incodity-production/contact";
 
   const submitForm = async () => {
     loading.value = true;
