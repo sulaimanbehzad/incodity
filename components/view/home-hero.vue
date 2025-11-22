@@ -2,10 +2,10 @@
   <div class="hero">
     <div class="hero__main">
       <div class="hero__content">
-        <h1 class="hero__heading typed-out">Code Without Limits</h1>
+        <h1 class="hero__heading typed-out">Your All-in-One</h1>
 
         <div class="hero__heading-animated">
-          <h1 class="hero__heading typed-out">For Your Business Growth</h1>
+          <h1 class="hero__heading typed-out">Tech Partner</h1>
           <div class="line">
             <div></div>
             <line-path class="line-path" />
