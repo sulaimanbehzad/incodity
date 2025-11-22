@@ -3,6 +3,7 @@
     <div class="hero__main">
       <div class="hero__content">
         <h1 class="hero__heading typed-out">Code Without Limits</h1>
+
         <div class="hero__heading-animated">
           <h1 class="hero__heading typed-out">For Your Business Growth</h1>
           <div class="line">
@@ -17,6 +18,7 @@
           that boost visibility and generate leads.
         </p>
       </div>
+
       <v-btn color="primary" size="large" rounded>Take the Next Step</v-btn>
     </div>
 
@@ -67,6 +69,7 @@
       @include flex($dir: column, $align: center, $justify: center);
     }
 
+    /* Main hero headings */
     &__heading {
       @include typography(bold-48);
       text-align: center;
@@ -75,11 +78,17 @@
       color: var(--color-text-main);
       z-index: 5;
 
+      /* IMPORTANT: allow wrapping */
+      word-break: break-word;
+      max-width: 100%;
+      white-space: normal;
+
       @include mq(large) {
         @include typography(bold-36);
       }
     }
 
+    /* Animated heading section */
     &__heading-animated {
       position: relative;
       margin-bottom: 2rem;
@@ -88,11 +97,12 @@
       .typed-out {
         overflow: hidden;
         border-right: 0.3rem solid var(--color-text-main);
-        white-space: nowrap;
+        white-space: nowrap; /* typing effect on desktop */
         padding-right: space(2);
         animation: typing 1.5s steps(50, end) forwards, border-blink 1s infinite;
         height: 6rem;
         margin-bottom: 0;
+        max-width: 100%;
 
         @include mq(large) {
           height: 4rem;
@@ -116,36 +126,38 @@
         width: 100%;
         color: #3c493f;
       }
+    }
 
-      @keyframes lineDraw {
-        from {
-          width: 100%;
-        }
-        to {
-          width: 0%;
-        }
+    /* Typography animations */
+    @keyframes lineDraw {
+      from {
+        width: 100%;
       }
-
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-
-      @keyframes border-blink {
-        0%,
-        100% {
-          border-color: var(--color-text-main);
-        }
-        50% {
-          border-color: transparent;
-        }
+      to {
+        width: 0%;
       }
     }
 
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes border-blink {
+      0%,
+      100% {
+        border-color: var(--color-text-main);
+      }
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* Description */
     &__desc {
       @include typography(semi-bold-18);
       text-align: center;
@@ -160,6 +172,7 @@
       }
     }
 
+    /* Illustrations */
     &__illustration {
       max-width: 50rem;
       height: 30rem;
@@ -170,6 +183,7 @@
     }
   }
 
+  /* Left illustration */
   .illustration-left {
     position: absolute;
     width: 40rem;
@@ -187,6 +201,7 @@
     }
   }
 
+  /* Right illustration */
   .illustration-right {
     position: absolute;
     width: 35rem;
@@ -202,6 +217,7 @@
     }
   }
 
+  /* Line decoration */
   .illustration-line {
     position: absolute;
     top: 6.6rem;
@@ -209,6 +225,26 @@
     left: 0;
     opacity: 0.23;
     color: #e3b505;
+  }
+
+  /* ======================= */
+  /*     MOBILE FIXES        */
+  /* ======================= */
+  @include mq(small) {
+    /* Disable typing effect on mobile */
+    .hero__heading-animated .typed-out {
+      white-space: normal !important;
+      border-right: none !important;
+      animation: none !important;
+      height: auto !important;
+      font-size: 1.8rem !important;
+      text-align: center;
+    }
+
+    /* Scale non-animated heading */
+    .hero__heading {
+      font-size: 2rem !important;
+    }
   }
 </style>
 
