@@ -30,8 +30,8 @@
         <div class="footer__desc">
           <h4 class="footer__title">Phone Number</h4>
           <p
-            >Prefer a phone conversation? Give us a call at 202-875-3650. We're
-            here to answer your questions and discuss your projects.</p
+            >Prefer a phone conversation? Give us a call at +1 540-480-0060.
+            We're here to answer your questions and discuss your projects.</p
           >
         </div>
 
