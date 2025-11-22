@@ -64,9 +64,6 @@
 </template>
 
 <script setup>
-  import ConnectedWorldIllustration from "@/assets/illustration/connected-world.illustration.vue";
-</script>
-<script setup>
   import { ref } from "vue";
   import ConnectedWorldIllustration from "@/assets/illustration/connected-world.illustration.vue";
 
